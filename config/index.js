@@ -12,25 +12,25 @@ module.exports = {
     assetsPublicPath: '/',
     proxyTable: {
       '/api': { // 匹配所有以 '/api'开头的请求路径
-        target: 'http://71vs.cn:10000', // 代理目标的基础路径
+        target: 'http://localhost:88', // 代理目标的基础路径
         changeOrigin: true, // 支持跨域
-        pathRewrite: {// 重写路径: 去掉路径中开头的'/api'
-          '^/api': ''
-        }
+        // pathRewrite: {// 重写路径: 去掉路径中开头的'/api'
+        //   '^/api': ''
+        // }
       },
-      '/newapi':{ // 匹配所有以 '/api'开头的请求路径
-        target: 'http://x3kld3111n.51http.tech', // 代理目标的基础路径
-        changeOrigin: true, // 支持跨域
-        pathRewrite: {// 重写路径: 去掉路径中开头的'/api'
-          '^/newapi': ''
-        }
-      },
-      '/loginapi':{ // 匹配所有以 '/api'开头的请求路径
-        target: ' http://2b7gzhsrv5.51http.tech', // 代理目标的基础路径
-        changeOrigin: true, // 支持跨域
-        pathRewrite: {// 重写路径: 去掉路径中开头的'/api'
-          '^/loginapi': ''
-        }
+      // '/api':{ // 匹配所有以 '/api'开头的请求路径
+      //   target: 'http://localhost:88', // 代理目标的基础路径
+      //   changeOrigin: true, // 支持跨域
+      //   // pathRewrite: {// 重写路径: 去掉路径中开头的'/api'
+      //   //   '^/newapi': ''
+      //   // }
+      // },
+      // '/api/':{ // 匹配所有以 '/api'开头的请求路径
+      //   target: 'http://localhost:88', // 代理目标的基础路径
+      //   changeOrigin: true, // 支持跨域
+      //   pathRewrite: {// 重写路径: 去掉路径中开头的'/api'
+      //     '^/loginapi': ''
+      //   }
       },
       '/oauth2':{ // 匹配所有以 '/api'开头的请求路径
         target: ' http://api.weibo.com', // 代理目标的基础路径

@@ -1,8 +1,8 @@
 import ajax from './ajax'
 
 const BASE = '/api'
-const NEWBASE = '/newapi'
-const LOGINBASE = '/loginapi'
+const NEWBASE = '/api'
+const LOGINBASE = '/api/user'
 
 // Index
 //获取热门搜索词条
